@@ -10,7 +10,7 @@ $subject = $_POST['subject'];
 $message = $_POST['message'];
 $formcontent=" From: $name \n Subject: $subject \n Message: $message";
 $subjectNew = "CONTACT FORM";
-$recipient = "sayantikaghosh98@gmail.com";
+$recipient = "sayantikag@iisc.ac.in";
 $mailheader = "From: ".$emailFrom;
 mail($recipient, $subjectNew, $formcontent, $mailheader) or die("Error!");
 header("Location: index.php?mailsend");
